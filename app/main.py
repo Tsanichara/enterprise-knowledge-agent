@@ -19,5 +19,5 @@ def home():
 
 @app.post("/ask")
 def ask_question(request: QueryRequest):
-    result = generate_answer(request.question)
+    result = generate_answer(request.query)
     return result
