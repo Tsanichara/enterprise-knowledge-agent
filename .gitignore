@@ -1,0 +1,64 @@
+# ------------------------------
+# Python: bytecode and caches
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.hypothesis/
+.ipynb_checkpoints/
+
+# ------------------------------
+# Virtual environments
+# ------------------------------
+.venv/
+venv/
+env/
+
+# ------------------------------
+# Environment and local settings
+# ------------------------------
+.env
+.env.*
+.python-version
+
+# ------------------------------
+# Build, packaging, coverage
+# ------------------------------
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+.coverage
+.coverage.*
+htmlcov/
+
+# ------------------------------
+# Logs
+# ------------------------------
+*.log
+
+# ------------------------------
+# IDEs and editor metadata
+# ------------------------------
+.vscode/
+.idea/
+
+# ------------------------------
+# OS files
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Project-generated artifacts
+# ------------------------------
+data/chroma_db/
+data/outputs/
+
+# Optional generated reports
+reports/*.pdf
+reports/*.docx
