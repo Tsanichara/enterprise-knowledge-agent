@@ -15,12 +15,11 @@ def hybrid_search(query: str, top_k: int = 8):
             merged[doc_id]["sources_found_by"] = [result["retrieval_type"]]
         else:
             merged[doc_id]["sources_found_by"].append(result["retrieval_type"])
-        
-        final_results = list(merged.values())
 
-        final_results.sort(
-            key=lambda item: len(item["sources_found_by"]), reverse=True
-        )
+    final_results = list(merged.values())
+    final_results.sort(
+        key=lambda item: len(item["sources_found_by"]), reverse=True
+    )
 
     return final_results[:top_k]
 
